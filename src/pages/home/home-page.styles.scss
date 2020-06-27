@@ -1,0 +1,104 @@
+.home-page {
+   display: flex;
+   position: fixed;
+   background-image: url("../../assets/wall.jpg");
+   height:100%;
+   width: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ 
+   .left-container {
+     display: flex;
+     flex-direction: column;
+     margin-top: 50vh;
+     margin-left: 13vw;
+     width: 50%;
+     @media (max-width: 900px) {
+         width: 0%;
+     }
+   }
+ 
+   .right-container {
+     flex-direction: column;
+     display: flex;
+     /*align-items: center;*/
+     margin-top: 10vh;
+     margin-left: 10vw;
+     width: 50%;
+     & :last-child {
+       margin-top: 20vh;
+     }
+     .sheet-paper {
+       text-decoration:none;
+       color:rgb(24, 11, 100);
+       font-size: 18px;
+       background:#ffc;
+       display:block;
+       height:8vh;
+       width:10vw;
+       padding:1em;
+       -webkit-transform:rotate(-6deg);
+       -o-transform:rotate(-6deg);
+       -moz-transform:rotate(-6deg);
+       -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+       -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+       box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+       -moz-transition:-moz-transform .15s linear;
+       -o-transition:-o-transform .15s linear;
+       -webkit-transition:-webkit-transform .15s linear;
+       cursor: pointer;
+       &:hover{
+         -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+         -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+         box-shadow:10px 10px 7px rgba(0,0,0,.7);
+         -webkit-transform: scale(1.25);
+         -moz-transform: scale(1.25);
+         -o-transform: scale(1.25);
+         position:relative;
+         z-index:5;
+       }
+     }
+ 
+     .btn{
+       width: 9em;
+       height: 3em;
+       background: none;
+       border: 4px solid;
+       color: #c0f11e;
+       font-weight: 700;
+       text-transform: uppercase;
+       cursor: pointer;
+       font-size: 24px;
+       position: relative;
+     }
+     
+     .btn::before,.btn::after{
+       content: "";
+       position: absolute;
+       width: 15px;
+       height: 5px;
+       background: #034b45;
+       transform: skewX(50deg);
+       transition: .4s linear;
+     }
+     
+     .btn::before{
+       top: -4px;
+       left: 10%;
+     }
+     
+     .btn::after{
+       bottom: -4px;
+       right: 10%;
+     }
+     
+     .btn:hover::before{
+       left: 80%;
+     }
+     
+     .btn:hover::after{
+       right: 80%;
+     }
+   }
+ }

@@ -1,0 +1,35 @@
+.header {
+   height: 5vw;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   background-color: rgb(9, 2, 53);
+ 
+   .logo-container {
+     height:  100%;/*10vw;*/
+     width: 70px;/*15vw; padding-left: 2em;*/
+     padding: 20px;
+   }
+ 
+   .options {
+     width: 50%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+ 
+     .option {
+       padding: 10px 25px;
+       cursor: pointer;
+       color: white;
+       font-size: larger;
+     }
+   }
+   .options:last-child {
+     padding-right: 100px;
+   }
+   .user-picture {
+     width: 2vw;
+     height: 5vh;
+   }
+ }

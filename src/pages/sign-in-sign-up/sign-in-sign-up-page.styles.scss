@@ -1,0 +1,16 @@
+.container-wall {
+   /*
+   position: fixed;
+   background-image: url("../../assets/wall_single.jpg");
+   height:100%;
+   width: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;*/
+   .sign-in-and-sign-up {
+      width: 850px;
+      display: flex;
+      justify-content: space-between;
+      margin: 30px auto;
+   }
+}
